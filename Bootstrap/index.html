@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thulasi's Portfolio</title>
 
+    <script src="https://kit.fontawesome.com/07b5433e7d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -14,7 +15,7 @@
 <body>
 
     <!-- ------------navbar------- -->
-    <nav class="navbar navbar-expand-lg bg-success navbar-dark py-4 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-4 fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand font-weight-bold">Thulasi</a>
 
@@ -33,6 +34,11 @@
                     </li>
                     <li class="nav-item">
                         <a href="#projects" class="nav-link">Projects</a>
+                        
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">Learn</a>
                         
                     </li>
                     <li class="nav-item">
@@ -64,13 +70,57 @@
         </div>
     </section>
 
+<!-- ------------------about------------- -->
+<div id="about" class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/showcase.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skiils">
+                    <ul>
+                        <li><span>UI / UX</span><br> Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br> Designing Web/App Interfaces</li>
+                        <li><span>App Development</span><br> Designing Web/App Interfaces</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Wipro-CITI</span><br> System Admin</li>
+                        <li><span>Wipro</span><br> Radia & Sccm Infra Admin</li>
+                        <li><span>Wipro-APPLE</span><br> Devops Build Administrator</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br> Higher Secondary, Vellore</li>
+                        <li><span>2019</span><br> Bachelor of Computer Applications - VIT, Vellore</li>
+                        <li><span>2024</span><br> M.Tech in Software Engineering - Bits, Pilani</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <!-- --------------boxes---------------- -->
 
-    <h1 class=" p-2 text-center mb-4 bg-success">Projects</h1>
+    
 
-<section class="p-5" >
+<section class="p-5" id="projects">
+    <h1 class="m-4 text-center mb-4 bg-success">Projects</h1>
     <div class="container">
         <div class="row text-center g-4">
             <div class="col-md">
@@ -84,17 +134,19 @@
                     </div>
                 </div> 
             </div>
+            
             <div class="col-md">
                 <div class="card bg-dark text-warning">
-                <div class="card-body text-center">
-                    <div class="h1 mb-3">
-                        <i class="bi bi-laptop"></i></div>
-                        <h3 class="card-title mb-3">Virtual</h3>
-                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum dignissimos nulla quae accusantium praesentium quos facere, debitis a libero at perspiciatis, velit autem est ea eius quo ratione. Facere, assumenda.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                </div>
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-laptop"></i></div>
+                            <h3 class="card-title mb-3">Virtual</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum dignissimos nulla quae accusantium praesentium quos facere, debitis a libero at perspiciatis, velit autem est ea eius quo ratione. Facere, assumenda.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                
             </div>
-         </div>
             <div class="col-md">
                 <div class="card bg-dark text-warning">
                 <div class="card-body text-center">
@@ -105,6 +157,8 @@
                         <a href="#" class="btn btn-primary">Read More</a>
                 </div>
             </div>
+
+            
          </div>
 
         </div>
@@ -158,8 +212,87 @@
     
 <!-- ---------------------question section-------------- -->
 
-<section class="p-5" id="">asdf</section>
+<section class="p-5" id="question">
+    
+
+</section>
+
+
+
+
+<!-- -----------------------------------contact------------ -->
+
+
+<!-- -----------------------------------contact-------------------------------------------- -->
+
+<div id="contact" class="bg-dark text-light" >
+    <div class="container">
+        
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fas fa-paper-plane"></i> thulasiraman288@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 9790521720</p>
+                <div class="container social-icons d-flex">
+                    <a href="#"><i class="fab fa-facebook"></i> </a>
+                    <a href="#"><i class="fab fa-twitter-square"></i> </a>
+                    <a href="#"><i class="fab fa-instagram"></i> </a>
+                    <a href="https://www.linkedin.com/in/thulasi-raman-804479138" target="_blank"><i class="fab fa-linkedin"></i> </a>
+                    <a href="https://github.com/thulasigithub123/thulasigithub123.github.io" target="_blank"><i class="fab fa-github"></i> </a>
+                </div>
+                <a href="Thulasi_MyCV.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input class="border border-primary rounded" type="text" name="Name" placeholder="Your Name" required>
+                    <input class="border border-primary rounded" type="email" name="Email" placeholder="Your Email" required>
+                    <textarea class="border border-primary rounded" name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+    
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+    </script>
+
+<script>
+    const scriptURL='https://script.google.com/macros/s/AKfycby0EhPYpV5vGfJK2So9mCAg2RKacLguK2g9I626jGdgnX-6KVE1go1ocZthiFCopZC7/exec'
+    const form=document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+
+    form.addEventListener('submit',e=>{
+        e.preventDefault()
+        fetch(scriptURL,{method:'POST',body:new FormData(form)})
+        .then(Response=>{
+            msg.innerHTML="Message Sent !!!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error=>console.error('error',error.message))
+    })
+</script>
 </body>
 </html>
