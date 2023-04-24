@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter using Redux + JS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js" integrity="sha512-1/8Tj23BRrWnKZXeBruk6wTnsMJbi/lJsk9bsRgVwb6j5q39n0A00gFjbCTaDo5l5XrPVv4DZXftrJExhRF/Ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <h1>Counter</h1>
+    <hr>
+
+    <h2 id="counterH2"></h2>
+    <button id="incr">+</button>
+    <button id="decr">-</button>
+
+    <script>
+        var counterH2=document.getElementById("counterH2")
+        var incrBtn=document.getElementById("incr")
+        var decrBtn=document.getElementById("decr")
+
+        var incrAction={
+            type:'INCR'
+        }
+
+        
+        var decrAction={
+            type:'DECR'
+        }
+
+        function counterReducer(state,action){
+            if(typeof state ==='undefined') return 0
+            if(action.type==='INCR'){
+                return state + 1
+            }  else if(action.type==='DECR'){
+                return state - 1
+            } else {
+                return state
+            } 
+        }
+
+        const store=Redux.createStore(counterReducer)
+
+         
+
+
+        function render(){
+
+            counterH2.innerHTML=store.getState()
+           
+        }
+
+        render()
+
+        store.subscribe(render)
+        incrBtn.onclick=function(){
+            store.dispatch(incrAction)
+            
+            
+           
+        }
+        decrBtn.onclick=function(){
+            store.dispatch(decrAction)
+           
+             
+        }
+    </script>
+    
+</body>
+</html>
