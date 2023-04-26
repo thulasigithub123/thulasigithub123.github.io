@@ -1,14 +1,10 @@
 
 body{
-    
-    
+       
     background: linear-gradient(to top right, rgb(96, 132, 13), rgb(109, 60, 60));
     background-repeat: no-repeat;
     background-position: right top;
-
-    
-}
- 
+   } 
 .hvr-grow {
     
      
