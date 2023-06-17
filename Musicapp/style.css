@@ -1,48 +1,89 @@
 .songItem {
-    margin-bottom: 20px;
-  }
-  
-  body{
-    background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  }
+  margin-bottom: 20px;
+}
 
-  
+body {
+  background: linear-gradient(112deg, rgba(181, 80, 217, 0.79) 12.23%, rgba(80, 119, 217, 0.88) 51.71%);
+  font-size: 29px;
+  min-height: 100vh;
+}
 
-  .container {
-    margin-top: 50px;
-  }
+ul,
+li,
+a {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ffffff, #44b618);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .song-title {
-    font-weight: bold;
-  }
+.container {
+  margin-top: 50px;
+}
 
-  .song-list-item {
-    margin-bottom: 10px;
-  }
+.song-title {
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  .song-list-item a {
-    color: #333333;
-    text-decoration: none;
-  }
+.song-list-item {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
 
-  .song-list-item a:hover {
-    color: #ff6600;
-  }
+.song-list-item a {
+  color: #333333;
+}
 
-  .youtube-player {
-    background-color: #000000;
-  }
+.song-list-item a:hover {
+  color: #ff6600;
+}
 
-  #controls {
-    margin-top: 20px;
-  }
+.youtube-player {
+  background-color: #000000;
+}
 
-  #controls button {
-    margin-right: 10px;
-  }
+#controls {
+  margin-top: 20px;
+}
 
-  .active {
-    background-color: #ff6600;
-    color: #ffffff;
-  }
+#controls button {
+  margin-right: 10px;
+}
+
+li.active a {
+  background-color: #ff6600;
+  color: #173a36;
+}
+
+#titleBox {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 29px 96px;
+  gap: 10px;
+  width: 768px;
+  height: 132px;
+  left: calc(50% - 768px/2 - 0.5px);
+  bottom: 797px;
+  mix-blend-mode: overlay;
+  border: 7px solid #E48989;
+  border-radius: 40px;
+}
+
+#titleText {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 74px;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

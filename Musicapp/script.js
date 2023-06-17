@@ -1,9 +1,7 @@
-
 let songs = [];
 let currentIndex = 0;
 let player;
 
-// Function to fetch the songs from songs.json
 async function fetchSongs() {
   try {
     const response = await fetch('songs.json');
@@ -15,9 +13,7 @@ async function fetchSongs() {
   }
 }
 
-// Call the fetchSongs function to retrieve the data
 fetchSongs();
- 
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('youtubePlayer', {
@@ -88,7 +84,6 @@ function updateControls() {
   previousButton.disabled = currentIndex === 0;
   nextButton.disabled = currentIndex === songs.length - 1;
 }
-
 function renderSongList() {
   const songList = document.getElementById('songList');
   songList.innerHTML = '';
@@ -104,15 +99,19 @@ function renderSongList() {
       playSong(index);
     });
 
-    if (index === currentIndex) {
-      li.classList.add('active');
-    }
-
     li.appendChild(link);
     ul.appendChild(li);
   });
 
   songList.appendChild(ul);
+
+  const listItems = songList.getElementsByTagName('li');
+  for (let i = 0; i < listItems.length; i++) {
+    listItems[i].classList.remove('active'); // Remove 'active' class from all list items
+    if (i === currentIndex) {
+      listItems[i].classList.add('active'); // Add 'active' class to the current index
+    }
+  }
 }
 
 
@@ -122,7 +121,6 @@ function playSong(index) {
   updateControls();
 }
 
-// Load the YouTube Iframe API asynchronously
 const tag = document.createElement('script');
 tag.src = 'https://www.youtube.com/iframe_api';
 const firstScriptTag = document.getElementsByTagName('script')[0];
