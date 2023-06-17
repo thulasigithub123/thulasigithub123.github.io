@@ -3,21 +3,26 @@
 <head>
   <title>YouTube Player</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
   <div class="container">
+    <h1>YouTube Player</h1>
+  </div>
+
+  <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <h1>YouTube Player</h1>
-        <div id="songList"></div>
+       <div id="songList"></div>
       </div>
       <div class="col-md-8">
-        <div id="youtubePlayer"></div>
+        <div id="youtubePlayer" class="youtube-player"></div>
         <div id="controls">
-          <button id="previousButton" disabled>Previous</button>
-          <button id="playButton">Play</button>
-          <button id="pauseButton">Pause</button>
-          <button id="nextButton" disabled>Next</button>
+          <button id="previousButton" disabled class="btn btn-primary">Previous</button>
+          <button id="playButton" class="btn btn-success">Play</button>
+          <button id="pauseButton" class="btn btn-danger">Pause</button>
+          <button id="nextButton" disabled class="btn btn-primary">Next</button>
         </div>
       </div>
     </div>

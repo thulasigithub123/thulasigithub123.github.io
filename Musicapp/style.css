@@ -2,3 +2,47 @@
     margin-bottom: 20px;
   }
   
+  body{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  }
+
+  
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .song-title {
+    font-weight: bold;
+  }
+
+  .song-list-item {
+    margin-bottom: 10px;
+  }
+
+  .song-list-item a {
+    color: #333333;
+    text-decoration: none;
+  }
+
+  .song-list-item a:hover {
+    color: #ff6600;
+  }
+
+  .youtube-player {
+    background-color: #000000;
+  }
+
+  #controls {
+    margin-top: 20px;
+  }
+
+  #controls button {
+    margin-right: 10px;
+  }
+
+  .active {
+    background-color: #ff6600;
+    color: #ffffff;
+  }
